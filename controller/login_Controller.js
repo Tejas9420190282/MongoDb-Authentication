@@ -48,7 +48,8 @@ const login_Controller = async (req, res) => {
             res.status(200).json({
                 success : true,
                 message : `user successfully logged in......`,
-                redirect : "/user-home"
+                redirect : "/user-home",
+                token : token
             })
         }
 
@@ -71,7 +72,8 @@ const login_Controller = async (req, res) => {
         res.status(200).json({
             success : true,
             message : `Admin successfully logged in......`,
-            redirect : "/admin-home"
+            redirect : "/admin-home",
+            token : token
         })
 
     } catch (error) {
