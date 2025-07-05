@@ -45,7 +45,7 @@ const login_Controller = async (req, res) => {
 
             console.log(`user successfully logged in......`.bgYellow);
             
-            res.status(200).json({
+            return res.status(200).json({
                 success : true,
                 message : `user successfully logged in......`,
                 redirect : "/user-home",
